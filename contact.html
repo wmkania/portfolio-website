@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Verdana:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href=css/style.production.css>
+	<link rel="stylesheet" type="text/css" href=css/styles.css>
 
 </head>
 
@@ -27,7 +27,7 @@
 		document.addEventListener('DOMContentLoaded', function() {
 			 if (!window.AnimationEvent) { return; }
 			     var anchors = document.getElementsByTagName('a');
-    
+
     		for (var idx=0; idx<anchors.length; idx+=1) {
 
     		if (anchors[idx].hostname !== window.location.hostname ||
@@ -37,13 +37,13 @@
   		anchors[idx].addEventListener('click', function(event) {
             var fader = document.getElementById('fader'),
                 anchor = event.currentTarget;
-            
+
             var listener = function() {
                 window.location = anchor.href;
                 fader.removeEventListener('animationend', listener);
             };
             fader.addEventListener('animationend', listener);
-            
+
             event.preventDefault();
                         fader.classList.add('fade-in');
        		 });
@@ -51,7 +51,7 @@
 		});
 
         </script>
-        
+
 	<header class="page-header">
 			<img src="img/logo.png" class="logo" alt="logo">
 		<nav class="main-navigation page-header__item">
