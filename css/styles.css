@@ -1,4 +1,3 @@
-
 :root {
   --primary-color: #357b70;
   --secondary-color: #997379;
@@ -6,12 +5,12 @@
   --default-button-color: #b2868e;
   --secondary-button-color: #e5acb6;
   --button-text-color: #ffffff;
-  --table-color: #2f2f2f;
+  --table-color: #ffffff;
   --font-weight: 700;
 
 }
 
-body {background-image: url("../img/pattern.jpeg")
+body {background-image: url("../img/pattern.jpeg");
 }
 
 body {
@@ -361,4 +360,3 @@ nav {
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
-
